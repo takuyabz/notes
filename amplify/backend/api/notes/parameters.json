@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "notes",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authnotes803d388e",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
